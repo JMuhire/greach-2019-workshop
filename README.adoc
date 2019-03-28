@@ -1,25 +1,24 @@
 = Observability Workshop
 
-== Agenda
+A hands on playground for learning observability basics in a hands on fashion.
 
-* Intro
-** WHOAMI
-** How this Workshop is setup
-** What is Observability
-* Lab01 - Logging
-** Consolidated Logging -- All services show up in elk
-** Dynamic Logging Levels -- Only show debug on some
-** Formatting
-** Correlation IDs
-* Lab01 Wrap Up
-** When to use each, what are some pitfalls / best practices
-* Lab02 - Tracing
-** Zipkin Support For Services
-** DataStore Tracing
-** Debug slow transactions
-* Lab03 - Metrics
-* Lab04 - Observability Bugs
+Infra runs in docker compose
 
+[source,bash]
+----
+{project}/infra/$ docker-compose up
+----
 
-== Abstract
-This workshop will be a hands on exploration of observability. There will be a microservice architecture system that we work to debug and add needed insights to. We will have a mix of services written in Ratpack, Micronaut, and Grails all interacting over a mix of methodologies; the setup will model an evolving system maintained by a number of teams. Work with logging techniques such as dynamic log levels, correlation IDs and formatting tricks. We will add distributed tracing to services, then actually debug issues. Metrics will also be covered. I’ll even introduce a few scenarios of observability gone wrong. Most of this workshop will be hands on the keyboard.
+The labs all work best if you move into that folder or the subprojects folder to run gradle commands.
+
+[source,bash]
+----
+cd {project}/lab-01/edge-ratpack/
+gradle run
+----
+
+== Links
+
+* links.html[Link Page for Local Services]
+* Each Lab has a TASKS.adoc file
+* lab.pdf[Presentation PDF]
