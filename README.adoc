@@ -19,6 +19,6 @@ gradle run
 
 == Links
 
-* links.html[Link Page for Local Services]
+* link:links.html[Link Page for Local Services]
 * Each Lab has a TASKS.adoc file
-* lab.pdf[Presentation PDF]
+* link:lab.pdf[Presentation PDF]
